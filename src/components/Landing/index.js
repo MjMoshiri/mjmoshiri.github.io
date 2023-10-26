@@ -8,17 +8,17 @@ function Landing() {
     return (<div className="landing-container">
         <img className="landing-image" src="/me.jpg" alt="MJ"/>
         <div className="icons-container">
-            <a href="mailto:thisismjmoshiri@gmail.com" target="_blank">
-                <MdOutlineAlternateEmail size={24}/>
-            </a>
-            <a href="https://www.linkedin.com/in/mjmoshiri/" target="_blank">
+            <a href="https://www.linkedin.com/in/mjmoshiri/" target="_blank" rel="noreferrer">
                 <FaLinkedin size={24}/>
             </a>
-            <a href="https://leetcode.com/mjmtg/" target="_blank">
+            <a href="https://leetcode.com/mjmtg/" target="_blank" rel="noreferrer">
                 <SiLeetcode size={24}/>
             </a>
-            <a href="https://github.com/mjmoshiri" target="_blank">
+            <a href="https://github.com/mjmoshiri" target="_blank" rel="noreferrer">
                 <FaGithub size={24}/>
+            </a>
+            <a href="mailto:thisismjmoshiri@gmail.com" target="_blank" rel="noreferrer">
+                <MdOutlineAlternateEmail size={24}/>
             </a>
         </div>
         <div className="landing-text-container">
