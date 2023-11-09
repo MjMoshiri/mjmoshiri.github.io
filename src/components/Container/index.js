@@ -5,7 +5,6 @@ function Container({ children }) {
     <div className="container">
       {children.map((child, index) => (
         <div key={index}>
-          <div className="separator"></div>
           {child}
         </div>
       ))}

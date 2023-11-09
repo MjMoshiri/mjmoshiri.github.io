@@ -23,9 +23,8 @@ const PopupComponent = memo(({ trigger, setTrigger, content }) => {
     return (
         <div className="popup">
             <div className="popup-inner" ref={popupContentRef}>
-                <button className="close-btn" onClick={() => setTrigger(false)}>Close</button>
-                <h2>Detailed Info</h2>
-                <p>{content}</p>
+                <button className="close-btn" onClick={() => setTrigger(false)}>X</button>
+                {content}
             </div>
         </div>
     );
