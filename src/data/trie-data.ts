@@ -18,10 +18,10 @@ class Trie {
         current.items.push(item);
     }
 
-    search(query: string): Set<String> {
+    search(query: string): Set<string> {
         query = query.toLowerCase();
         const queryParts = query.split(',').map((part) => part.trim()).filter((part) => part.length > 0);
-        const result = new Set<String>();
+        const result = new Set<string>();
         let current = this.root;
         for (const queryPart of queryParts) {
             this.processWord(queryPart, current, result);
@@ -29,7 +29,7 @@ class Trie {
         return result;
     }
 
-    private processWord(word: string, current: TrieNode, result: Set<String>): void {
+    private processWord(word: string, current: TrieNode, result: Set<string>): void {
         for (const char of word) {
             if (!current.children.has(char)) {
                 return;
@@ -47,7 +47,7 @@ class Trie {
 class TrieNode {
     children: Map<string, TrieNode>;
     isEndOfWord: boolean;
-    items: String[];
+    items: string[];
 
     constructor() {
         this.children = new Map<string, TrieNode>();

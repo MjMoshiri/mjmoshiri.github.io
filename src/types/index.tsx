@@ -1,4 +1,11 @@
-export type Category = "Projects" | "Skills" | "Education" | "Experience" | "Course";
+
+export enum Category {
+    Projects = "Projects",
+    Skills = "Skills",
+    Education = "Education",
+    Experience = "Experience",
+    Course = "Course",
+}
 
 export interface IDataItem {
     name: string;
