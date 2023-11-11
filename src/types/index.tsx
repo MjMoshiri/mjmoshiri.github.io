@@ -4,13 +4,12 @@ export enum Category {
     Skills = "Skills",
     Education = "Education",
     Experience = "Experience",
-    Course = "Course",
 }
 
 export interface IDataItem {
     name: string;
-    description: string;
-    url: string;
+    description?: string;
+    url?: string;
     category?: Category;
     subcategory?: string;
     date?: string;

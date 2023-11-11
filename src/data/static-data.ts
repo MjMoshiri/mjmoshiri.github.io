@@ -1,348 +1,315 @@
-import {IDataItem} from '../types';
+import {IDataItem} from "../types";
 
-export const data: { [category: string]: { [subcategory: string]: IDataItem[] } } = {
+export const data: {
+    [category: string]: { tags: string[], data: { [subcategory: string]: { tags: string[], data: IDataItem[] } } }
+} = {
     'Skills': {
-        'Programming Languages': [
-            {
-                name: 'Java',
-                description: '',
-                url: '',
-                tags: ['java', 'programming language'],
+        tags: ['skill'],
+        data: {
+            'Programming Languages': {
+                tags: ['programming language', 'language'],
+                data: [
+                    {
+                        name: 'Java',
+                        tags: ['java', 'programming language'],
+                    },
+                    {
+                        name: 'Kotlin',
+                        tags: ['kotlin', 'programming language', 'android'],
+                    },
+                    {
+                        name: 'Scala',
+                        tags: ['scala', 'programming language'],
+                    },
+                    {
+                        name: 'Python',
+                        tags: ['python', 'programming language', 'ai', 'machine learning'],
+                    },
+                    {
+                        name: 'C',
+                        tags: ['c', 'programming language'],
+                    },
+                    {
+                        name: 'C++',
+                        tags: ['c++', 'programming language'],
+                    },
+                    {
+                        name: 'Go',
+                        tags: ['go', 'golang', 'programming language', 'backend', 'typescript'],
+                    },
+                    {
+                        name: 'JavaScript',
+                        tags: ['javascript', 'programming language', 'frontend', 'nodejs'],
+                    },
+                    {
+                        name: 'TypeScript',
+                        tags: ['typescript', 'programming language', 'frontend', 'backend', 'fullstack'],
+                    }
+                ]
             },
-            {
-                name: 'Kotlin',
-                description: '',
-                url: '',
-                tags: ['kotlin', 'programming language'],
+            'Web Development': {
+                tags: ['web development'],
+                data: [
+                    {
+                        name: 'React',
+                        tags: ['react', 'frontend', 'javascript'],
+                    },
+                    {
+                        name: 'Node.js',
+                        tags: ['nodejs', 'backend', 'javascript'],
+                    },
+                    {
+                        name: 'Express',
+                        tags: ['express', 'backend', 'javascript'],
+                    },
+                    {
+                        name: 'Spring Boot',
+                        tags: ['spring boot', 'backend', 'java'],
+                    },
+                    {
+                        name: 'CSS',
+                        tags: ['css', 'web development'],
+                    },
+                    {
+                        name: 'SCSS',
+                        tags: ['scss', 'web development'],
+                    },
+                    {
+                        name: 'HTML',
+                        tags: ['html', 'web development'],
+                    }
+                ]
             },
-            {
-                name: 'Scala',
-                description: '',
-                url: '',
-                tags: ['scala', 'programming language'],
+            'Database Management': {
+                tags: ['database management'],
+                data: [
+                    {
+                        name: 'PostgreSQL',
+                        tags: ['postgresql', 'database management'],
+                    },
+                    {
+                        name: 'MySQL',
+                        tags: ['mysql', 'database management'],
+                    },
+                    {
+                        name: 'MongoDB',
+                        tags: ['mongodb', 'database management'],
+                    },
+                    {
+                        name: 'Cassandra',
+                        tags: ['cassandra', 'database management'],
+                    },
+                    {
+                        name: 'Oracle',
+                        tags: ['oracle', 'database management'],
+                    },
+                    {
+                        name: 'Room',
+                        tags: ['room', 'database management'],
+                    },
+                    {
+                        name: 'SQLite',
+                        tags: ['sqlite', 'database management'],
+                    },
+                    {
+                        name: 'Microsoft SQL Server',
+                        tags: ['microsoft sql server', 'database management'],
+                    }
+                ]
             },
-            {
-                name: 'Python',
-                description: '',
-                url: '',
-                tags: ['python', 'programming language'],
+            'Development & Design': {
+                tags: ['development', 'design'],
+                data: [
+                    {
+                        name: 'REST',
+                        tags: ['rest', 'web development'],
+                    },
+                    {
+                        name: 'OOP',
+                        tags: ['oop', 'programming'],
+                    },
+                    {
+                        name: 'SOLID',
+                        tags: ['solid', 'programming'],
+                    },
+                    {
+                        name: 'Algorithms',
+                        tags: ['algorithms', 'programming'],
+                    }
+                ]
             },
-            {
-                name: 'C',
-                description: '',
-                url: '',
-                tags: ['c', 'programming language'],
+            'DevOps & Infrastructure': {
+                tags: ['devops', 'infrastructure'],
+                data: [
+                    {
+                        name: 'Linux',
+                        tags: ['linux', 'devops'],
+                    },
+                    {
+                        name: 'Bash',
+                        tags: ['bash', 'devops'],
+                    },
+                    {
+                        name: 'Git',
+                        tags: ['git', 'version control', 'devops'],
+                    },
+                    {
+                        name: 'GitLab',
+                        tags: ['gitlab', 'version control', 'devops'],
+                    },
+                    {
+                        name: 'AWS',
+                        tags: ['aws', 'cloud', 'devops'],
+                    },
+                    {
+                        name: 'Kubernetes',
+                        tags: ['kubernetes', 'container orchestration', 'devops'],
+                    },
+                    {
+                        name: 'Docker',
+                        tags: ['docker', 'containerization', 'devops'],
+                    },
+                    {
+                        name: 'OpenShift',
+                        tags: ['openshift', 'container orchestration', 'devops'],
+                    },
+                    {
+                        name: 'CI/CD',
+                        tags: ['ci/cd', 'devops'],
+                    }
+                ]
             },
-            {
-                name: 'C++',
-                description: '',
-                url: '',
-                tags: ['c++', 'programming language'],
+            'API Design & Management': {
+                tags: ['api design', 'api management'],
+                data: [
+                    {
+                        name: 'Postman',
+                        tags: ['postman', 'api testing', 'api design'],
+                    },
+                    {
+                        name: 'Swagger',
+                        tags: ['swagger', 'api documentation', 'api design'],
+                    },
+                    {
+                        name: 'AWS API Gateway',
+                        tags: ['aws api gateway', 'api management', 'api design'],
+                    },
+                    {
+                        name: 'Coverity',
+                        tags: ['coverity', 'code analysis', 'api design'],
+                    }
+                ]
             },
-            {
-                name: 'Go',
-                description: 'A statically typed language designed at Google',
-                url: 'https://golang.org',
-                tags: ['go', 'golang', 'programming language'],
-            },
-            {
-                name: 'JavaScript',
-                description: '',
-                url: '',
-                tags: ['javascript', 'programming language'],
-            },
-            {
-                name: 'TypeScript',
-                description: 'A typed superset of JavaScript that compiles to plain JavaScript',
-                url: 'https://www.typescriptlang.org/',
-                tags: ['typescript', 'javascript', 'programming language', 'nodejs', 'frontend', 'backend', 'fullstack'],
-            },
-        ],
-        'Web Development': [
-            {
-                name: 'React',
-                description: '',
-                url: '',
-                tags: ['react', 'javascript', 'frontend', 'web development'],
-            },
-            {
-                name: 'NodeJS',
-                description: '',
-                url: '',
-                tags: ['nodejs', 'javascript', 'backend', 'web development'],
-            },
-            {
-                name: 'Express',
-                description: '',
-                url: '',
-                tags: ['express', 'javascript', 'backend', 'web development'],
-            },
-            {
-                name: 'Spring Boot',
-                description: '',
-                url: '',
-                tags: ['spring boot', 'java', 'backend', 'web development'],
-            },
-            {
-                name: 'CSS',
-                description: '',
-                url: '',
-                tags: ['css', 'styling', 'web development'],
-            },
-            {
-                name: 'SCSS',
-                description: '',
-                url: '',
-                tags: ['scss', 'styling', 'web development'],
-            },
-            {
-                name: 'HTML',
-                description: '',
-                url: '',
-                tags: ['html', 'markup language', 'web development'],
-            },
-        ],
-        'Database Management': [
-            {
-                name: 'PostgreSQL',
-                description: '',
-                url: '',
-                tags: ['postgresql', 'database', 'sql'],
-            },
-            {
-                name: 'MySQL',
-                description: '',
-                url: '',
-                tags: ['mysql', 'database', 'sql'],
-            },
-            {
-                name: 'MongoDB',
-                description: '',
-                url: '',
-                tags: ['mongodb', 'database', 'nosql'],
-            },
-            {
-                name: 'Cassandra',
-                description: '',
-                url: '',
-                tags: ['cassandra', 'database', 'nosql'],
-            },
-            {
-                name: 'Oracle',
-                description: '',
-                url: '',
-                tags: ['oracle', 'database', 'sql'],
-            },
-            {
-                name: 'Room',
-                description: '',
-                url: '',
-                tags: ['room', 'database', 'android'],
-            },
-            {
-                name: 'SQLite',
-                description: '',
-                url: '',
-                tags: ['sqlite', 'database', 'sql'],
-            },
-            {
-                name: 'Microsoft SQL Server',
-                description: '',
-                url: '',
-                tags: ['microsoft sql server', 'database', 'sql'],
-            },
-        ],
-        'Development & Design': [
-            {
-                name: 'REST',
-                description: '',
-                url: '',
-                tags: ['rest', 'api design', 'software architecture'],
-            },
-            {
-                name: 'OOP',
-                description: '',
-                url: '',
-                tags: ['oop', 'object-oriented programming', 'programming paradigm'],
-            },
-            {
-                name: 'SOLID',
-                description: '',
-                url: '',
-                tags: ['solid', 'software design', 'programming principles'],
-            },
-            {
-                name: 'Algorithms',
-                description: '',
-                url: '',
-                tags: ['algorithms', 'computer science', 'problem solving'],
-            },
-        ],
-        'DevOps & Infrastructure': [
-            {
-                name: 'Linux',
-                description: '',
-                url: '',
-                tags: ['linux', 'operating system', 'server management'],
-            },
-            {
-                name: 'Bash',
-                description: '',
-                url: '',
-                tags: ['bash', 'scripting', 'shell'],
-            },
-            {
-                name: 'Git',
-                description: '',
-                url: '',
-                tags: ['git', 'version control', 'software development'],
-            },
-            {
-                name: 'GitLab',
-                description: '',
-                url: '',
-                tags: ['gitlab', 'version control', 'devops'],
-            },
-            {
-                name: 'AWS',
-                description: '',
-                url: '',
-                tags: ['aws', 'cloud computing', 'cloud services'],
-            },
-            {
-                name: 'Kubernetes',
-                description: '',
-                url: '',
-                tags: ['kubernetes', 'container orchestration', 'cloud computing'],
-            },
-            {
-                name: 'Docker',
-                description: '',
-                url: '',
-                tags: ['docker', 'containerization', 'devops'],
-            },
-            {
-                name: 'OpenShift',
-                description: '',
-                url: '',
-                tags: ['openshift', 'container orchestration', 'cloud computing'],
-            },
-            {
-                name: 'CI/CD',
-                description: '',
-                url: '',
-                tags: ['ci/cd', 'continuous integration', 'continuous deployment', 'devops'],
-            },
-        ],
-        'API Design & Management': [
-            {
-                name: 'Postman',
-                description: '',
-                url: '',
-                tags: ['postman', 'api testing', 'api development'],
-            },
-            {
-                name: 'Swagger',
-                description: '',
-                url: '',
-                tags: ['swagger', 'api documentation', 'api design'],
-            },
-            {
-                name: 'AWS API Gateway',
-                description: '',
-                url: '',
-                tags: ['aws api gateway', 'api management', 'cloud computing'],
-            },
-            {
-                name: 'Coverity',
-                description: '',
-                url: '',
-                tags: ['coverity', 'software quality', 'static analysis'],
-            },
-        ],
-        'Testing & Quality Assurance': [
-            {
-                name: 'Selenium',
-                description: '',
-                url: '',
-                tags: ['selenium', 'testing', 'web automation'],
-            },
-            {
-                name: 'Robot Framework',
-                description: '',
-                url: '',
-                tags: ['robot framework', 'testing', 'automation'],
-            },
-            {
-                name: 'JUnit',
-                description: '',
-                url: '',
-                tags: ['junit', 'testing', 'java'],
-            },
-            {
-                name: 'Mocha',
-                description: '',
-                url: '',
-                tags: ['mocha', 'testing', 'javascript'],
-            },
-        ],
+            'Testing & Quality Assurance': {
+                tags: ['testing', 'quality assurance'],
+                data: [
+                    {
+                        name: 'Selenium',
+                        tags: ['selenium', 'testing', 'quality assurance'],
+                    },
+                    {
+                        name: 'Robot Framework',
+                        tags: ['robot framework', 'testing', 'quality assurance'],
+                    },
+                    {
+                        name: 'JUnit',
+                        tags: ['junit', 'testing', 'quality assurance'],
+                    },
+                    {
+                        name: 'Mocha',
+                        tags: ['mocha', 'testing', 'quality assurance'],
+                    }
+                ]
+            }
+        }
     },
     'Projects': {
-        'Web Development': [
-            {
-                name: 'CodeShare',
-                description: 'A platform for sharing code snippets',
-                url: 'https://codeshare.example.com',
-                tags: ['codeshare', 'code', 'snippet', 'sharing', 'backend', 'frontend', 'fullstack', 'java', 'spring boot', 'postgresql', 'javascript', 'html', 'css'],
-            },
-            {
-                name: 'My personal website',
-                description: 'My personal website',
-                url: 'https://example.com',
-                tags: ['website', 'personal', 'frontend', 'fullstack', 'react', 'typescript', 'javascript'],
-            },
-            {
-                name: 'Random Quote Machine',
-                description: '',
-                url: '',
-                tags: ['typescript', 'javascript', 'reactjs', 'robot framework', 'scss', 'html', 'single-page application', 'api'],
-            },
-            {
-                name: 'Code Sharing Platform',
-                description: '',
-                url: '',
-                tags: ['java', 'spring boot', 'postgresql', 'javascript', 'html', 'css', 'restful', 'web application', 'code snippets'],
-            },
-            {
-                name: 'HyperLink Fetcher',
-                description: '',
-                url: '',
-                tags: ['gradle', 'java', 'logger', 'concurrency', 'web tool', 'hyperlinks', 'markup processing'],
-            },
-        ],
-        'Mobile Development': [
-            {
-                name: 'Second Sight',
-                description: '',
-                url: '',
-                tags: ['kotlin', 'android studio', 'jetpack compose', 'hilt', 'room', 'android app', 'mvvm', 'time-tracking'],
-            },
-        ],
-        'Microservices': [
-            {
-                name: 'Log Lyfe',
-                description: '',
-                url: '',
-                tags: ['go', 'cassandra', 'docker', 'make', 'microservice', 'logging', 'high performance', 'scalability'],
-            },
-        ],
-        'Blockchain': [
-            {
-                name: 'Blockchain',
-                description: '',
-                url: '',
-                tags: ['go', 'blockchain', 'consensus', 'p2p', 'distributed system'],
-            },
-        ],
+        tags: ['project'],
+        data: {
+            'Web Development': {
+                tags: ['web development'],
+                data: [
+                    {
+                        name: 'CodeShare',
+                        tags: ['codeshare', 'code', 'snippet', 'sharing', 'backend', 'frontend', 'fullstack'],
+                    },
+                    {
+                        name: 'My Personal Website',
+                        tags: ['website', 'personal', 'frontend', 'fullstack', 'react', 'typescript', 'javascript'],
+                    },
+                    {
+                        name: 'Second Sight',
+                        tags: ['android', 'kotlin', 'mvvm', 'android studio', 'jetpack compose', 'hilt', 'room'],
+                    },
+                    {
+                        name: 'Log Lyfe',
+                        tags: ['go', 'cassandra', 'docker', 'microservice', 'logger'],
+                    },
+                    {
+                        name: 'Blockchain Ecosystem',
+                        tags: ['java', 'blockchain', 'concurrency', 'sha-256'],
+                    },
+                    {
+                        name: 'Code Sharing Platform',
+                        tags: ['java', 'spring boot', 'postgresql', 'javascript', 'html', 'css', 'rest api'],
+                    },
+                    {
+                        name: 'Random Quote Machine',
+                        tags: ['typescript', 'javascript', 'reactjs', 'test-driven', 'spa'],
+                    },
+                    {
+                        name: 'HyperLink Fetcher',
+                        tags: ['java', 'gradle', 'producer-consumer', 'concurrency'],
+                    }
+                ]
+            }
+        }
     },
+    'Experience': {
+        tags: ['experience'],
+        data: {
+            'Software Engineer': {
+                tags: ['software engineer'],
+                data: []
+            }
+        }
+    },
+    'Education': {
+        tags: ['education'],
+        data: {
+            'Relevant Courses': {
+                tags: ['course'],
+                data: [
+                    {
+                        name: 'Modern Linux, O\'Reilly',
+                        tags: ['linux', 'course'],
+                    },
+                    {
+                        name: 'Advanced SQL, Kaggle',
+                        tags: ['sql', 'course'],
+                    },
+                    {
+                        name: 'Data-Intensive Programming, Tampere University',
+                        tags: ['data-intensive programming', 'course'],
+                    },
+                    {
+                        name: 'Large-Scale System Design, Educative.io',
+                        tags: ['large-scale system design', 'course'],
+                    },
+                    {
+                        name: 'Concurrency, Tampere University',
+                        tags: ['concurrency', 'course'],
+                    },
+                    {
+                        name: 'Machine Learning, Aalto University',
+                        tags: ['machine learning', 'course'],
+                    },
+                    {
+                        name: 'CS50: Introduction to Computer Science, Harvard University',
+                        tags: ['cs50', 'computer science', 'course'],
+                    }
+                ]
+            }
+        }
+    }
 };
