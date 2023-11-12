@@ -28,7 +28,7 @@ export const data: {
                         {
                             name: 'Scala',
                             tags: ['scala', 'functional programming', 'JVM', 'Spark', 'Concurrency', 'Big Data', 'Apache Kafka',
-                                'Machine learning', 'Scalability', 'Data analysis', 'Type safe'],
+                                'Machine learning', 'Scalability', 'Data analysis', 'Type safe', 'ml'],
                             description: "I have used Scala for Spark and Apache Kafka in the context of Big Data and Stream processing. Prior to using Scala, I was familiar with " +
                                 "Java functional Libraries such so getting used to Scala was easy."
                         },
@@ -38,7 +38,7 @@ export const data: {
                                 'web development', 'Flask', 'NumPy', 'Pandas', 'Jupyter', 'Anaconda',
                                 'PyCharm', 'TensorFlow', 'Keras', 'Scikit-learn', 'Data analysis',
                                 'Automation', 'Scripting', 'Seaborn', 'Deep learning',
-                                'Natural Language Processing', 'neural network',
+                                'Natural Language Processing', 'neural network', 'ml',
                                 'Computer vision', 'Web scraping', 'API', 'REST'],
                             description: "I have used Python for almost everything. I am quite familiar with the language, libraries, data structures, and common toolkits around it and feel comfortable using it."
                         },
@@ -279,7 +279,7 @@ export const data: {
             tags: ['project', 'projects', 'git', 'github'],
             data: {
                 'Web Development': {
-                    tags: ['web development', 'web'],
+                    tags: ['web development', 'web', 'api', 'rest'],
                     data: [
                         {
                             name: 'Code Sharing Platform',
@@ -289,8 +289,11 @@ export const data: {
                             url: 'https://github.com/MjMoshiri/CodeShare'
                         },
                         {
-                            name: 'My Personal Website',
-                            tags: ['frontend', 'fullstack', 'react', 'typescript', 'javascript', 'npm'],
+                            name: 'Personal Website',
+                            tags: ['frontend', 'fullstack', 'react', 'typescript', 'javascript', 'npm', 'algorithm', 'html'],
+                            description: "My personal website, developed using React and TypeScript and deployed on GitHub Pages." +
+                                "I have used my algorithmic skills to develop a custom algorithm for the search functionality.",
+                            url: 'https://github.com/MjMoshiri/mjmoshiri.github.io'
                         },
                         {
                             name: 'Log Lyfe',
@@ -356,7 +359,7 @@ export const data: {
             tags: ['experience'],
             data: {
                 'Software': {
-                    tags: ['engineering','software','developer'],
+                    tags: ['engineering', 'software', 'developer'],
                     data: [
                         {
                             name: 'Software Engineer Intern at Nokia Networks',
@@ -368,13 +371,13 @@ export const data: {
                         {
                             name: 'Researcher at LUT University',
                             description: 'Developed study materials, coding exercises, and problem-solving activities for AI and Linux-focused courses at Bachelor\'s and Master\'s levels, using technologies like Python, OpenAI, TensorFlow, and MS Office.',
-                            tags: ['researcher', 'AI', 'Linux', 'machine learning', 'python', 'openai', 'tensorflow', 'ms office'],
+                            tags: ['research', 'AI', 'Linux', 'machine learning', 'ml', 'python', 'openai', 'tensorflow', 'ms office'],
                             date: 'May 2022 – Sep 2022',
                         },
                         {
                             name: 'Teaching Assistant at LUT University',
                             description: 'Provided mentorship in Python, Java, and C, covering concepts from memory management to object-oriented programming (OOP).',
-                            tags: ['researcher', 'java', 'python', 'c', 'oop', 'object oriented', 'low level'],
+                            tags: ['research', 'java', 'python', 'c', 'oop', 'object oriented', 'low level'],
                             date: 'Dec 2021 – Apr 2022',
                         }
                     ]
@@ -429,12 +432,12 @@ export const data: {
                                             url: 'https://learning.oreilly.com/videos/kubernetes-for-the/9781838555962/',
                                         }, {
                                         name: 'Introduction to Audio Processing',
-                                        tags: ['audio processing', 'audio', 'dsp', 'signal', 'python', 'numpy', 'scipy', 'matplotlib', 'jupyter', 'matlab'],
+                                        tags: ['audio processing', 'audio', 'dsp', 'signal', 'python', 'numpy', 'scipy', 'matplotlib', 'jupyter', 'matlab', 'machine learning', 'ml'],
                                         url: 'https://www.tuni.fi/archive/studyguide_tut/www.tut.fi/opinto-opas/wwwoppaat/opas2018-2019/kv/aineryhmat/Signaalinkasittely/SGN-14007.html'
                                     },
                                         {
                                             name: 'Introduction to Image and Video Processing',
-                                            tags: ['image processing', 'video processing', 'image', 'video', 'dsp', 'signal', 'python', 'numpy', 'scipy', 'matplotlib', 'jupyter', 'matlab'],
+                                            tags: ['image processing', 'video processing', 'image', 'video', 'dsp', 'signal', 'python', 'machine learning', 'ml', 'numpy', 'scipy', 'matplotlib', 'jupyter', 'matlab'],
                                             url: 'https://www.tuni.fi/en/study-with-us/introduction-image-and-video-processing-lectures'
                                         },
                                         {
