@@ -15,3 +15,8 @@ export interface IDataItem {
     date?: string;
     tags: string[];
 }
+
+export interface ItemListProps {
+    items: IDataItem[];
+    title: string;
+}

@@ -355,8 +355,8 @@ export const data: {
         'Experience': {
             tags: ['experience'],
             data: {
-                'Engineering': {
-                    tags: ['engineering'],
+                'Software': {
+                    tags: ['engineering','software','developer'],
                     data: [
                         {
                             name: 'Software Engineer Intern at Nokia Networks',
@@ -385,19 +385,14 @@ export const data: {
         ,
         'Education':
             {
-                tags: ['education'],
+                tags: ['education', 'university', 'school', 'course', 'courses', 'book', 'books'],
                 data:
                     {
-                        'Relevant Courses':
+                        'Courses':
                             {
-                                tags: ['course'],
+                                tags: [],
                                 data:
                                     [
-                                        {
-                                            name: 'Modern Linux, O\'Reilly',
-                                            tags: ['linux', 'shell', 'bash', 'os', 'unix', 'kernel', 'devops', 'infrastructure', 'devops', 'cluster', 'cloud'],
-                                            url: 'https://learning.oreilly.com/library/view/learning-modern-linux/9781098108939/'
-                                        },
                                         {
                                             name: 'Advanced SQL, Kaggle',
                                             tags: ['sql', 'database', 'db', 'dbms', 'sql server', 'mysql', 'sqlite', 'oracle'],
@@ -427,9 +422,55 @@ export const data: {
                                             name: 'CS50: Introduction to Computer Science, Harvard University',
                                             tags: ['cs50', 'computer science', 'c', 'python', 'algorithm', 'data structure', 'web development', 'html', 'css', 'javascript', 'sql'],
                                             url: 'https://pll.harvard.edu/course/cs50-introduction-computer-science'
+                                        },
+                                        {
+                                            name: 'Kubernetes Hands-On',
+                                            tags: ['kubernetes', 'docker', 'container', 'cloud', 'devops', 'microservices', 'api', 'rest'],
+                                            url: 'https://learning.oreilly.com/videos/kubernetes-for-the/9781838555962/',
+                                        }, {
+                                        name: 'Introduction to Audio Processing',
+                                        tags: ['audio processing', 'audio', 'dsp', 'signal', 'python', 'numpy', 'scipy', 'matplotlib', 'jupyter', 'matlab'],
+                                        url: 'https://www.tuni.fi/archive/studyguide_tut/www.tut.fi/opinto-opas/wwwoppaat/opas2018-2019/kv/aineryhmat/Signaalinkasittely/SGN-14007.html'
+                                    },
+                                        {
+                                            name: 'Introduction to Image and Video Processing',
+                                            tags: ['image processing', 'video processing', 'image', 'video', 'dsp', 'signal', 'python', 'numpy', 'scipy', 'matplotlib', 'jupyter', 'matlab'],
+                                            url: 'https://www.tuni.fi/en/study-with-us/introduction-image-and-video-processing-lectures'
+                                        },
+                                        {
+                                            name: 'Cyber Security',
+                                            tags: ['cyber security', 'security', 'cyber', 'network', 'network security', 'crypto'],
+                                            url: 'https://www.tuni.fi/en/study-with-us/cyber-security-i-fundamentals-fitech'
                                         }
                                     ]
-                            }
+                            },
+                        'Books': {
+                            tags: [],
+                            data: [{
+                                name: 'Modern Linux, O\'Reilly',
+                                tags: ['linux', 'shell', 'bash', 'os', 'unix', 'kernel', 'devops', 'infrastructure', 'devops', 'cluster', 'cloud'],
+                                url: 'https://learning.oreilly.com/library/view/learning-modern-linux/9781098108939/'
+                            },
+                                {
+                                    name: 'Go Cookbook, O\'Reilly',
+                                    tags: ['go', 'golang', 'programming', 'language', 'languages'],
+                                    url: 'https://learning.oreilly.com/library/view/go-cookbook/9781098122102/',
+                                }, {
+                                    name: 'Designing Data-Intensive Applications, O\'Reilly ',
+                                    tags: ['data intensive', 'big data', 'data', 'design', 'large scale', 'scale', 'scalability', 'distributed system', 'system design', 'system'],
+                                    url: 'https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/'
+                                }, {
+                                    name: 'Efficient Go, O\'Reilly',
+                                    tags: ['go', 'golang', 'programming', 'language', 'languages'],
+                                    url: 'https://learning.oreilly.com/library/view/efficient-go/9781098105709/'
+                                },
+                                {
+                                    name: 'Cassandra: The Definitive Guide, 3rd Edition, O\'Reilly',
+                                    tags: ['cassandra', 'nosql', 'distributed', 'database', 'db'],
+                                    url: 'https://learning.oreilly.com/library/view/-/9781098115159/'
+                                }
+                            ]
+                        }
                     }
             }
     }

@@ -6,11 +6,21 @@ interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     return (
-        <input
-            type="text"
-            onChange={(e) => onSearch(e.target.value)}
-            placeholder="Search..."
-        />
+        <div>
+            <input
+                type="text"
+                onChange={(e) => onSearch(e.target.value)}
+                placeholder="Backend, DevOps, Cloud"
+                style={
+                    {
+                        width: "50%",
+                        padding: "0.5rem",
+                        borderRadius: "0.5rem",
+                        border: "1px solid #ff0000",
+                    }
+                }
+            />
+        </div>
     );
 };
 
