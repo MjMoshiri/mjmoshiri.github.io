@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.4aab1683.css",
-    "main.js": "/resume/static/js/main.f89f1f82.js",
-    "index.html": "/resume/index.html",
-    "main.4aab1683.css.map": "/resume/static/css/main.4aab1683.css.map",
-    "main.f89f1f82.js.map": "/resume/static/js/main.f89f1f82.js.map"
+    "main.css": "/mjmoshiri.github.io/static/css/main.4aab1683.css",
+    "main.js": "/mjmoshiri.github.io/static/js/main.f89f1f82.js",
+    "index.html": "/mjmoshiri.github.io/index.html",
+    "main.4aab1683.css.map": "/mjmoshiri.github.io/static/css/main.4aab1683.css.map",
+    "main.f89f1f82.js.map": "/mjmoshiri.github.io/static/js/main.f89f1f82.js.map"
   },
   "entrypoints": [
     "static/css/main.4aab1683.css",
