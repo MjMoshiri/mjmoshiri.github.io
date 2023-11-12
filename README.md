@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Personal Website Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Welcome to my personal website, a static site showcasing my work and experiences. It's developed using TypeScript and
+React, and deployed using the `gh-pages` npm package. Check it out
+here: [mjmoshiri.github.io](https://mjmoshiri.github.io)
 
-In the project directory, you can run:
+## Search Function
 
-### `npm start`
+The unique aspect of this website is the data structures implemented for the search functionality. Information is
+categorized into four main areas: Skills, Education, Experience, and Projects, each with their subcategories. Each data
+point is associated with a set of tags. For example, `Java` is tagged with:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```json
+{
+  "name": "Java",
+  "tags": [
+    "java",
+    "object oriented",
+    "oop",
+    "Spring",
+    "Spring Boot",
+    "Hibernate",
+    "JVM",
+    "Maven",
+    "Gradle",
+    "IntelliJ IDEA",
+    "Cloud",
+    "Concurrency",
+    "Web development",
+    "Multithreading",
+    "Microservices",
+    "Cloud computing",
+    "API",
+    "REST"
+  ]
+}
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Upon initial loading, the data is stored in a map (keyed by name) and a [Trie](https://en.wikipedia.org/wiki/Trie) data structure based on tags. 
+This enables efficient `O(L)` search operations, where `L` is the length of the search
+term.
 
-### `npm test`
+## Next Steps
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clean up static data.
+- Extensive frontend work.
+- Implement CI pipelines for direct compilation and deployment.
+- Optimize by precompiling the Trie and map to avoid regeneration on every page refresh.
+- Potentially enhance the search functionality with a Language Learning Model (LLM) like GPT to answer user queries more
+  interactively.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Stay tuned for updates!
