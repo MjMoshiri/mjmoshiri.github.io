@@ -320,7 +320,7 @@ export const data: {
                     tags: ['other'],
                     data: [{
                         name: 'SecondSight',
-                        tags: ['android', 'kotlin', 'mvvm', 'android studio', 'jetpack compose', 'hilt', 'room', 'oop', 'object oriented'],
+                        tags: ['android', 'kotlin', 'mvvm', 'android studio', 'jetpack compose', 'hilt', 'room', 'oop', 'object oriented', 'java', 'gradle'],
                         description: "A time tracker app, built with Kotlin, Jetpack Compose, Room, and Gradle, designed to help categorize and manage daily activities.",
                         url: 'https://github.com/MjMoshiri/SecondSight'
                     },
@@ -451,9 +451,18 @@ export const data: {
                             tags: [],
                             data: [{
                                 name: 'Modern Linux, O\'Reilly',
-                                tags: ['linux', 'shell', 'bash', 'os', 'unix', 'kernel', 'devops', 'infrastructure', 'devops', 'cluster', 'cloud'],
+                                tags: ['linux', 'shell', 'bash', 'os', 'unix', 'kernel', 'devops', 'infrastructure', 'devops', 'cluster', 'cloud', 'programming', 'language', 'languages'],
                                 url: 'https://learning.oreilly.com/library/view/learning-modern-linux/9781098108939/'
+                            }, {
+                                name: 'Software Engineering at Google, O\'Reilly',
+                                tags: ['google', 'devops', 'infrastructure', 'devops', 'cluster', 'cloud', 'design', 'oop', 'linux', 'devops', 'programming', 'language', 'languages', 'system'],
+                                url: 'https://learning.oreilly.com/library/view/software-engineering-at/9781492082781/'
                             },
+                                {
+                                    name: 'The Well-Grounded Java Developer, O\'Reilly',
+                                    tags: ['java', 'object oriented', 'kotlin', 'Clojure','oop', 'Spring', 'Spring Boot','Docker', 'Kubernetes', 'Microservices', 'API', 'REST', 'Maven', 'Gradle', 'IntelliJ IDEA', 'Cloud', 'Concurrency','Web'],
+                                    url:'https://learning.oreilly.com/library/view/the-well-grounded-java/9781617298875/'
+                                },
                                 {
                                     name: 'Go Cookbook, O\'Reilly',
                                     tags: ['go', 'golang', 'programming', 'language', 'languages'],
