@@ -498,6 +498,7 @@ export const data: {
                 {
                     name: 'Clean Code: A Handbook of Agile Software Craftsmanship',
                     tags: ['clean code', 'oop', 'object oriented', 'design', 'design pattern', 'solid', 'solid principles', 'software design', 'software development', 'programming', 'language', 'languages'],
+                    url: 'https://learning.oreilly.com/library/view/-/9780136083238/'
                 }
                 ]
             }
